@@ -1,0 +1,1 @@
+Vanilla.js로 paint해주는 파일
