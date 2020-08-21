@@ -31,6 +31,7 @@ int main(){
       temp = a%b;
       a = b;
       b = temp;
+      
     }
   }
   
