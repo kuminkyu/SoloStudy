@@ -17,4 +17,5 @@ int main(){
   
   printf("%d",pascal(n,m));
   return 0;
+  
 }
