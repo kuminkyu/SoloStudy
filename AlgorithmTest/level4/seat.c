@@ -51,7 +51,6 @@ int main(){
     }
     xcount--;
   }
-  
   printf("0");
   return 0;
 }
