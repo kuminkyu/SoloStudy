@@ -45,7 +45,6 @@ int main(){
       sumx += arr[t][t];
       sumy += arr[t][4-t];
     }
-    
     if(sumx == 0) cnt++;
     if(sumy == 0) cnt++;
     
