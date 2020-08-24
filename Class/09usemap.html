@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09usemap</title>
+</head>
+<body>
+    <img src="cap.PNG" usemap="#yourname">
+    <map name="yourname"><!--yourname:마음대로 이름 짓기-->
+        <area shape="rect" coords="100,0,190,120"
+            href="https://comic.naver.com/webtoon/list.nhn?titleId=703846&weekday=tue" />
+        <area shape="circle" coords="245,50,45"
+            href="https://comic.naver.com/webtoon/list.nhn?titleId=662774&weekday=wed" />
+        <area shape="poly" coords="295,120, 345,0, 395,120"
+            href="https://comic.naver.com/webtoon/list.nhn?titleId=748105&weekday=thu" />
+    </map>
+    <h1>usemap : map 태그를 사용한다는 의미.</h1>
+    <h2>area tag : map tag에 영역을 설정하는 표현</h2>
+    <h3>rect : 사각형 / circle : 원 / poly : 다각형</h3>
+    <h3>rect coords : 시작X, 시작Y, 끝X, 끝Y</h3>
+    <h3>poly coords : 꼭지점X, 꼭지점Y, .....</h3>
+</body>
+</html>
