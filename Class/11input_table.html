@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11input_table</title>
+</head>
+<body>
+    <form action="" method="POST"">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" id="idtxt" name="idtxt"
+                        maxlength="5" />
+                    <input type="button" id="idChkBtn" value="ID 중복 확인">
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td>
+                    <input type="password" id="pwdtxt" name="pwdtxt"
+                    maxlength="5" />
+                </td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" id="gen1" name="gender"
+                        value="M"  checked="checked"/> 남성
+                    <input type="radio" id="gen2" name="gender"
+                        value="F" /> 여성
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" id="favor1" name="favor"
+                        value="job" checked="checked" /> 취업
+                    <input type="checkbox" id="favor2" name="favor"
+                        value="startup" /> 창업
+                </td>
+            </tr>
+            <tr>
+                <td>내국인 여부</td>
+                <td>
+                    <select id="native_yn" name="native_yn">
+                        <option value="F">외국인</option>
+                        <option value="N" selected="selected">
+                            내국인</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td>
+                    <textarea rows="5" cols="30"
+                        id="intro" name="intro"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>사진</td>
+                <td>
+                    <input type="image" id="myphoto" name="myphoto"
+                        src="subak1.jpg" width="150px"
+                        title="풍선도움말" />
+                </td>
+            </tr>
+            <tr>
+                <td>첨부파일</td>
+                <td>
+                    <input type="file" id="chumbu" name="chumbu" />
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value=" 전 송 " />
+        <input type="reset" value=" 취 소 " />
+    </form>
+    <hr>
+    <h1>form : user에게 data를 입력받는 문서 양식 -> 서버 전송</h1>
+    <h2>form action : data를 전송할 주소를 적는 곳.</h2>
+    <h2>form method : data를 전송하는 방법.</h2>
+    <h2>get : 주소창에 data가 보이는 전송 방식. 보안 취약. 속도 빠름. 256byte만 전송 보장</h2>
+    <h2>post : 주소창에 data가 안보이는 전송 방식. 보안 OK. 속도 느림. 대용량 전송 가능</h2>
+    <h1>input : data를 입력 받는 객체.</h1>
+    <h2>id 속성 : html page에서 객체(element,요소)를 구분하는 이름</h2>
+    <h2>name 속성 : 서버로 전송하는 data에 붙는 이름</h2>
+</body>
+</html>

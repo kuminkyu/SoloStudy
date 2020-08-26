@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15table</title>
+</head>
+<body>
+    <table>
+        <caption>this is tiltle</caption>
+        <colgroup>
+            <col width="100px"
+                style="background-color: pink;">
+                <col width="100px"
+                style="background-color: purple;">
+                <col width="100px"
+                style="background-color: brown;">
+        </colgroup>
+        <thead style="background-color: skyblue;">
+            <tr>
+                <th>table head</th>
+                <th>table head</th>
+                <th>table head</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table data</td>
+                <td>table data</td>
+                <td rowspan="2">table data</td>
+            </tr>
+            <tr>
+                <td>table data</td>
+                <td>table data</td>
+                <!-- <td>table data</td> -->
+            </tr>
+            <tr>
+                <td>table data</td>
+                <td colspan="2">table data</td>
+                <!-- <td>table data</td> -->
+            </tr>
+        </tbody>
+        <tfoot style="background-color: lightgreen;">
+            <tr>
+                <td colspan="3">table foot</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
