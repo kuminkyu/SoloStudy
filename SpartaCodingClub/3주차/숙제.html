@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML에 이 부분을 추가하고 -->
+
+<head>
+    <title>나만의 홈페이지2</title>
+
+    <script>
+
+        function order() {
+            let name = $('#order_name').val();
+            let select = $('#order_select').val();
+            let address = $('#order_address').val();
+            let phone = $('#order_phone').val();
+
+            if (name == '') {
+                alert('이름을 입력해주세요');
+                $('#order_name').focus();
+                return
+            } else if (select == ' ') {
+                alert('수량을 입력해주세요');
+                $('#order_select').focus();
+                return
+            } else if (address == ' ') {
+                alert('주소를 입력해주세요');
+                $('#order_address').focus();
+                return
+            } else if (phone == ' ') {
+                alert('휴대폰번호를 입력해주세요');
+                $('#order_phone').focus();
+                return
+            }
+        }
+
+    </script>
+
+    <style>
+        .mytitle {
+            color: white;
+            text-align: center;
+            background-image: url('http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0');
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img {
+
+            background-image: url(https://www.conscious-skincare.com/wp-content/uploads/2016/02/glc-candle-lit-with-new-gift-box.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 300px;
+
+        }
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        h4 {
+            display: inline;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .order1 {
+            text-align: center;
+        }
+
+        .orders {
+            margin-top: 100px;
+        }
+
+        * {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="img"></div>
+        <div class="info">
+            <h1>양초를 팝니다</h1>
+            <h4>가격: 10,000원/개</h4>
+            <p>
+                <h5>이 양초로 말할 것 같으면 세계에서 유일하게 있는 참나무향 향초에요，남은 수량이 단 4개!!!!    </h5>
+            </p>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-pre">
+                <span class="input-group-text">
+                    주문자 성함
+                </span>
+            </div>
+            <input id="order_name" type="text"/>
+
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-pre">
+                <span class="input-group-text">
+                    수량
+                </span>
+            </div>
+            <select class="order-select">
+                <option selected value> -- 수량 선택 -- </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-pre">
+                <span class="input-group-text">
+                    주소
+                </span>
+            </div>
+            <input type="text" id="order_address">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-pre">
+                <span class="input-group-text">
+                    전화번호
+                </span>
+            </div>
+            <input type="text" id="order_phone">
+        </div>
+
+        <div class="order1">
+            <button onclick="order()">주문하기</button>
+        </div>
+
+        <div class="orders">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">이름</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">전화번호</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
