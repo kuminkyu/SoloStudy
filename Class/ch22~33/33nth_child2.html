@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33nth_child2</title>
+    <style>
+        table {background-color: springgreen;}
+        tr:first-child:hover {
+            background-color: red; color: white;}
+        tr:nth-child(2):hover {
+            background-color: orange; color: white;}
+        tr:nth-child(4n):hover {
+            background-color: green; color: white;}
+        tr:nth-last-child(2):hover {
+            background-color: darkblue; color: white;}
+        tr:last-child:hover {
+            background-color: purple; color: white;}
+        h2:first-of-type:hover {
+            background-color: red; color: white;
+        }
+        h2:nth-of-type(2):hover {
+            background-color: orange; color: white;
+        }
+        h2:nth-of-type(4n):hover {
+            background-color: green; color: white;
+        }
+        h2:nth-last-of-type(2):hover {
+            background-color: darkblue; color: white;
+        }
+        h2:last-of-type:hover {
+            background-color: purple; color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>빨강</h2>
+    <h2>주황</h2>
+    <h2>노랑</h2>
+    <h2>초록</h2>
+    <h2>파랑</h2>
+    <h2>남색</h2>
+    <h2>보라</h2>
+    <table>
+        <tr><td>빨강</td></tr>
+        <tr><td>주황</td></tr>
+        <tr><td>노랑</td></tr>
+        <tr><td>초록</td></tr>
+        <tr><td>파랑</td></tr>
+        <tr><td>남색</td></tr>
+        <tr><td>보라</td></tr>
+    </table>
+</body>
+</html>
